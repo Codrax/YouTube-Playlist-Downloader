@@ -18,4 +18,4 @@
 sudo pacman -Sy chafa python-mutagen python-prompt_toolkit
 ```
 
-You also **must** download the 3 ffmpeg binaries and place them in the same directory as the script.
+You also **must** download the 3 ffmpeg binaries and place them in the same directory as the script. You can find them [here](https://ffmpeg.org/download.html)
