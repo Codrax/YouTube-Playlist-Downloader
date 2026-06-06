@@ -3,6 +3,10 @@ cache/
 output/
 process/
 
+# BIN
+ffmpeg
+ffplay
+ffprobe
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

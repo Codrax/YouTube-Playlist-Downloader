@@ -29,6 +29,7 @@ class DataPipeline:
         # Binary overrides to use local files from your folder
         self.ytdlp_bin = "./yt-dlp"
         self.ffmpeg_bin = "./ffmpeg"
+        self.node_bin = "/usr/bin/node"
 
         # Ensure directories exist
         os.makedirs(self.output_dir, exist_ok=True)
@@ -168,6 +169,7 @@ class DataPipeline:
 
                 dl_cmd = [
                     self.ytdlp_bin,
+                    "--js-runtimes", f"node:{self.node_bin}",
                     *cookies_args,
                     "--ffmpeg-location", self.ffmpeg_bin,
                     "-x",
