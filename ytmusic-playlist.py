@@ -83,6 +83,7 @@ class DataPipeline:
 
         flat_cmd = [
             self.ytdlp_bin,
+            "--js-runtimes", f"node:{self.node_bin}",
             *cookies_args,
             "--flat-playlist",
             "--dump-json",
@@ -130,6 +131,7 @@ class DataPipeline:
 
                 info_cmd = [
                     self.ytdlp_bin,
+                    "--js-runtimes", f"node:{self.node_bin}",
                     *cookies_args,
                     "--dump-json",
                     video_url
